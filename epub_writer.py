@@ -1,5 +1,9 @@
 from ebooklib import epub
+import colorama
+from colorama import Back, Fore
 import pickle
+
+colorama.init()
 
 def write(file_name, title, author, chapters):
     # Ebook
@@ -40,7 +44,7 @@ def write(file_name, title, author, chapters):
     # write to the file
     epub.write_epub(file_name, book, {})
 
-
+    print(Back.GREEN + Fore.BLACK + " File " + Back.YELLOW + f" {file_name} "  + Back.GREEN + " Successfully Written ")
 def main():
     # Load chapters list that stores chapter info
     # Store chapter info
@@ -49,6 +53,7 @@ def main():
 
 
     write("Leetcode Questions.epub", "Leetcode Questions", "Anonymous", chapters)
+
 
 if __name__ == "__main__":
     main()
