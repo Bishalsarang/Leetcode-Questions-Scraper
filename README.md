@@ -23,6 +23,7 @@ Pip install all the requirements.
     beautifulsoup4==4.8.0
     selenium==3.141.0
     EbookLib==0.17.1
+    colorama==0.4.1
 
     
 ## How to use
@@ -49,5 +50,5 @@ Pip install all the requirements.
 
 You can download sample files from here which contains 11 problem.
 1. [Sample Out.epub](https://github.com/sarangbishal/Leetcode-Questions-Scrapper/blob/master/assets/sample%20output%20files/out.epub)
-2. [Sample Out.html](https://github.com/sarangbishal/Leetcode-Questions-Scrapper/blob/master/assets/sample%20output%20files/out.htmlhttps://github.com/sarangbishal/Leetcode-Questions-Scrapper/blob/master/assets/sample%20output%20files/out.html)
+2. [Sample Out.html](https://sarangbishal.github.io/Leetcode-Questions-Scrapper/assets/sample%20output%20files/out.html)
 
