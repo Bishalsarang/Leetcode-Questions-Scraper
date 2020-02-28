@@ -10,7 +10,7 @@ We can build links to each problem as
     “https://leetcode.com/problems/" + question_title_slug
 After getting the problem link we can fetch the content from the page using selenium (as Leetcode is built using react where content is rendered using JS we can't use lightweight library like requests).
 
-You can download the sample html and epub containing 11  problems [here](https://github.com/sarangbishal/Leetcode-Questions-Scrapper/tree/master/assets/sample%20output%20files).
+You can download the sample html and epub containing 11  problems [here](https://github.com/Bishalsarang/Leetcode-Questions-Scrapper/tree/master/assets/sample%20output%20files).
 
 ## Requirements
 	
@@ -31,24 +31,24 @@ Pip install all the requirements.
  - Update chrome driver path 
  - Run the following commands to download all algorithmic problems from leetcode
  `python main.py`
- ![enter image description here](https://raw.githubusercontent.com/sarangbishal/Leetcode-Questions-Scrapper/master/assets/screenshots/main.PNG?token=AG2ULFBE5HCEDG2FYTXPFW25RNWCU)
+ ![enter image description here](https://raw.githubusercontent.com/Bishalsarang/Leetcode-Questions-Scrapper/master/assets/screenshots/main.PNG)
  This downloads problem contents to 2 files: *****out.html***** and ***chapters.pickle***.
 
  **NOTE:** Leetcode may temporarily block requests. If the error occurs, wait for sometime and try again or use the proxy. Don't worry, Since, the previous state is saved to ***track.conf*** file, the download resumes from where it failed.
  
  Here is how sample ***out.html*** looks like.
- ![Sample out.html](https://raw.githubusercontent.com/sarangbishal/Leetcode-Questions-Scrapper/master/assets/screenshots/sample_out_html.PNG?token=AG2ULFBT3PWYY2VZZYDUEES5RNVBI)
+ ![Sample out.html](https://raw.githubusercontent.com/Bishalsarang/Leetcode-Questions-Scrapper/master/assets/screenshots/sample_out_html.PNG)
  
  After ***main.py*** script executes successfully. The pickle file is automatically converted to "***Leetcode Questions.epub***". 
  
  But you can also convert manually to epub with existing downloaded content with.
  `python epub_writer.py`
- ![enter image description here](https://raw.githubusercontent.com/sarangbishal/Leetcode-Questions-Scrapper/master/assets/screenshots/epub_writer.PNG?token=AG2ULFC6Q63GEO6JOK6FH4C5RN26O)
+ ![enter image description here](https://raw.githubusercontent.com/Bishalsarang/Leetcode-Questions-Scrapper/master/assets/screenshots/epub_writer.PNG)
  
  Here is how sample epub file looks like
-![Sample](https://raw.githubusercontent.com/sarangbishal/Leetcode-Questions-Scrapper/master/assets/screenshots/sample_out_epub.PNG?token=AG2ULFBGUDY5D4FCJ7SENZK5RNVFQ)
+![Sample](https://raw.githubusercontent.com/Bishalsarang/Leetcode-Questions-Scrapper/master/assets/screenshots/sample_out_epub.PNG)
 
 You can download sample files from here which contains 11 problem.
-1. [Sample Out.epub](https://github.com/sarangbishal/Leetcode-Questions-Scrapper/blob/master/assets/sample%20output%20files/out.epub)
-2. [Sample Out.html](https://sarangbishal.github.io/Leetcode-Questions-Scrapper/assets/sample%20output%20files/out.html)
+1. [Sample Out.epub](https://github.com/Bishalsarang/Leetcode-Questions-Scrapper/blob/master/assets/sample%20output%20files/out.epub)
+2. [Sample Out.html](https://bishalsarang.github.io/Leetcode-Questions-Scrapper/assets/sample%20output%20files/out.html)
 
