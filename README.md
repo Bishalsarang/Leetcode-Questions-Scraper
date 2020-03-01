@@ -1,6 +1,6 @@
-# Leetcode Questions Scrapper
+# Leetcode Questions Scraper
 
-Leetcode Questions Scrapper is a simple scrapper built on top of Selenium that fetches all the problems from leetcode and write as html and epub files.
+Leetcode Questions Scraper is a simple scrapper built on top of Selenium that fetches all the problems from leetcode and write as html and epub files.
 
 Although leetcode doesn't provide an official API to fetch all the list of problems, we can use the API url  [https://leetcode.com/api/problems/algorithms/](https://leetcode.com/api/problems/algorithms/) used by leetcode internally to fetch problems that returns a json file containing info about problems.
 The json file looks like this <br>
