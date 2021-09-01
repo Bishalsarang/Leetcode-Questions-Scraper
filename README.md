@@ -1,5 +1,8 @@
 # Leetcode Questions Scraper
 
+> Note: If you want to download daily updated problems you can visit my repo [Leetcode Questions](https://github.com/Bishalsarang/Leetcode-Questions) which basically checks leetcode daily and dowloads new problems if available. Here is the preview link for latest html https://bishalsarang.github.io/Leetcode-Questions/out.html
+
+
 Leetcode Questions Scraper is a simple scrapper built on top of Selenium that fetches all the problems from leetcode and write as html and epub files.
 
 Although leetcode doesn't provide an official API to fetch all the list of problems, we can use the API url  [https://leetcode.com/api/problems/algorithms/](https://leetcode.com/api/problems/algorithms/) used by leetcode internally to fetch problems that returns a json file containing info about problems.
