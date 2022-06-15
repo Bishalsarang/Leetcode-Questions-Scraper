@@ -53,5 +53,5 @@ Pip install all the requirements.
 
 You can download sample files from here which contains 11 problem.
 1. [Sample Out.epub](https://github.com/Bishalsarang/Leetcode-Questions-Scrapper/blob/master/assets/sample%20output%20files/out.epub)
-2. [Sample Out.html](https://bishalsarang.github.io/Leetcode-Questions-Scrapper/assets/sample%20output%20files/out.html)
+2. [Sample Out.html](https://htmlpreview.github.io/?https://github.com/Bishalsarang/Leetcode-Questions-Scraper/blob/master/assets/sample%20output%20files/out.html)
 
