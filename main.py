@@ -44,9 +44,9 @@ def download(problem_num, url, title, solution_slug):
     try:
 
         driver.get(url)
-        # Wait 20 secs or until div with id initial-loading disappears
-        element = WebDriverWait(driver, 20).until(
-            EC.invisibility_of_element_located((By.ID, "initial-loading"))
+        # Wait 30 secs or until div with class '_1l1MA' appears
+        element = WebDriverWait(driver, 30).until(
+            EC.visibility_of_element_located((By.CLASS_NAME, "_1l1MA"))
         )
         # Get current tab page source
         html = driver.page_source
@@ -55,8 +55,8 @@ def download(problem_num, url, title, solution_slug):
         # Construct HTML
         title_decorator = '*' * n
         problem_title_html = title_decorator + f'<div id="title">{title}</div>' + '\n' + title_decorator
-        problem_html = problem_title_html + str(soup.find("div", {"class": "content__u3I1 question-content__JfgR"})) + '<br><br><hr><br>'
-        
+        problem_html = problem_title_html + str(soup.find("div", {"class": "_1l1MA"})) + '<br><br><hr><br>'
+
         # Append Contents to a HTML file
         with open("out.html", "ab") as f:
             f.write(problem_html.encode(encoding="utf-8"))
