@@ -46,16 +46,17 @@ def download(problem_num, url, title, solution_slug):
         driver.get(url)
         # Wait 30 secs or until div with class '_1l1MA' appears
         element = WebDriverWait(driver, 30).until(
-            EC.visibility_of_element_located((By.CLASS_NAME, "_1l1MA"))
+            EC.visibility_of_element_located((By.LINK_TEXT, title))
         )
         # Get current tab page source
         html = driver.page_source
         soup = bs4.BeautifulSoup(html, "html.parser")
+        problem_div = [item for item in soup.find_all() if "data-track-load" in item.attrs][0]
 
         # Construct HTML
         title_decorator = '*' * n
         problem_title_html = title_decorator + f'<div id="title">{title}</div>' + '\n' + title_decorator
-        problem_html = problem_title_html + str(soup.find("div", {"class": "_1l1MA"})) + '<br><br><hr><br>'
+        problem_html = problem_title_html + str(problem_div) + '<br><br><hr><br>'
 
         # Append Contents to a HTML file
         with open("out.html", "ab") as f:
